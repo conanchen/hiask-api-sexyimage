@@ -1,0 +1,10 @@
+apply plugin: 'java'
+apply plugin: 'com.google.protobuf'
+
+
+compileJava.enabled = false
+
+project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+project.logger.lifecycle("~~~1. Run Task generateProto To Compile Protobuf~~~~~~~~~~~");
+project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
