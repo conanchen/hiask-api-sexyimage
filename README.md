@@ -26,7 +26,7 @@ dependencies {
 }
 ```
 	
-## For Java Application
+## For Java Application(Client or Server)
     
 ```gradle
 dependencies {
