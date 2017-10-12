@@ -33,4 +33,16 @@ dependencies {
     compile 'com.github.conanchen.hiask-api-sexyimage:grpc-manage-java:1.0.0-SNAPSHOT'
 }
 ```
-			
+	
+# Building ahead of time
+You can also build snapshots on each commit if you add GitHub Webhooks.
+
+To add, head to repository Settings -> Webhooks & Services -> Add webhook.
+
+Webhook URL: https://jitpack.io/api/webhooks
+
+Content type: application/json
+
+The webhook will trigger a build for branches that you have previously used with JitPack. So make sure you have requested master-SNAPSHOT from JitPack before adding a webhook.
+
+					
