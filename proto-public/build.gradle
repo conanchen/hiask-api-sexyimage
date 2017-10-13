@@ -1,8 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'com.google.protobuf'
 
-
 compileJava.enabled = false
+
+
+dependencies {
+}
 
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~PROTO-PUBLIC BUILD DONE!~~~~~~~~~~~~~~~~~~~");
