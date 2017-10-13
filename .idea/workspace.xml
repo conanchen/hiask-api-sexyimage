@@ -2,73 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95896d2e-5b22-430e-8e37-2573696e307c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proto-public/src/main/proto/singin/singin.proto" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/extracted-include-protos/test/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/extracted-protos/main/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/grpc/org/ditto/singin/grpc/SinginGrpc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequestOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponseOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-java/build/generated/source/proto/main/java/org/ditto/singin/grpc/SigninProto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/extracted-include-protos/test/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/extracted-protos/main/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/grpclite/org/ditto/singin/grpc/SinginGrpc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInRequestOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInResponseOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-manage-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SigninProto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/extracted-include-protos/test/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/extracted-protos/main/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/grpclite/org/ditto/singin/grpc/SinginGrpc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInRequestOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SignInResponseOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grpc-public-javalite/build/generated/source/proto/main/javalite/org/ditto/singin/grpc/SigninProto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/extracted-include-protos/test/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/extracted-protos/main/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequestOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponseOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/singin/grpc/SigninProto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/extracted-include-protos/test/image/public/singin.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInRequestOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/singin/grpc/SignInResponseOrBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/singin/grpc/SigninProto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proto-public/src/main/proto/image/public/singin.proto" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grpc-public-java/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/GreeterProto.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/GreeterProto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloReply.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloReply.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloReplyOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloReplyOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloRequestOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/io/grpc/examples/greeter/HelloRequestOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/ImageProto.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/ImageProto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/SubscribeRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/SubscribeRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitRequestOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitRequestOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitResponse.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitResponseOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/net/intellij/plugins/livesexyeditor/grpc/VisitResponseOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/CommonProto.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/CommonProto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/Error.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/Error.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ErrorOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ErrorOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageResponse.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageResponseOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageResponseOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageType.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/ImageType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/StatusResponse.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/StatusResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/StatusResponseOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/common/grpc/StatusResponseOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/DeleteRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/DeleteRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/DeleteRequestOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/DeleteRequestOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ImangeManProto.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ImangeManProto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ListRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ListRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ListRequestOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/ListRequestOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/UpsertRequest.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/UpsertRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/UpsertRequestOrBuilder.java" afterPath="$PROJECT_DIR$/proto-manage/build/generated/source/proto/main/java/org/ditto/sexyimage/manage/grpc/UpsertRequestOrBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proto-public/build.gradle" afterPath="$PROJECT_DIR$/proto-public/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -88,6 +27,9 @@
     <ignored path="$PROJECT_DIR$/proto-public/build/" />
     <ignored path="$PROJECT_DIR$/proto-public/out/" />
     <ignored path=".idea/" />
+    <ignored path="$PROJECT_DIR$/grpc-public-java/.gradle/" />
+    <ignored path="$PROJECT_DIR$/grpc-public-java/build/" />
+    <ignored path="$PROJECT_DIR$/grpc-public-java/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,8 +91,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grpc-manage-java/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grpc-public-java/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -186,12 +138,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proto-manage/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/signin/grpc/LoginResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#45204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/signin/grpc/LoginRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#29838#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,35 +194,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto-public/src/main/proto/image/common/common.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding>
-                <element signature="e#580#613#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PROTOBUF_JAVA_VERSION</find>
       <find>protoc-gen-javalite</find>
       <find>PROTOC_VERSION</find>
+      <find>protobuf-java</find>
+      <find>PROTOBUF_JAVA_VERSION</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,7 +210,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="/usr/local/Cellar/gradle-4.1" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -285,6 +240,10 @@
               <ExternalProjectPojo>
                 <option name="name" value=":grpc-manage-javalite" />
                 <option name="path" value="$PROJECT_DIR$/grpc-manage-javalite" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":grpc-public-java" />
+                <option name="path" value="$PROJECT_DIR$/grpc-public-java" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":grpc-public-javalite" />
@@ -866,6 +825,180 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/grpc-public-java">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':grpc-public-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':grpc-public-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Extracts proto files from compile dependencies for includes" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="extractIncludeTestProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="sourcesJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Extracts proto files from compile dependencies for includes" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="extractIncludeProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Extracts proto files/dependencies specified by 'protobuf' configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="extractProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Proto source for 'main'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="generateProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':grpc-public-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="javadocJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Proto source for 'test'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="generateTestProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Extracts proto files/dependencies specified by 'protobuf' configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="extractTestProto" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':grpc-public-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grpc-public-java" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/grpc-public-javalite">
           <value>
             <list>
@@ -1392,14 +1525,16 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="13570511584000" />
+        <entry key="$PROJECT_DIR$" value="15078471741000" />
         <entry key="$PROJECT_DIR$/blessedDeps.gradle" value="1005484352" />
         <entry key="$PROJECT_DIR$/build.gradle" value="789315904" />
         <entry key="$PROJECT_DIR$/grpc-manage-java/build.gradle" value="1833222919" />
         <entry key="$PROJECT_DIR$/grpc-manage-javalite/build.gradle" value="3775996957" />
+        <entry key="$PROJECT_DIR$/grpc-public-java/build.gradle" value="2812603429" />
         <entry key="$PROJECT_DIR$/grpc-public-javalite/build.gradle" value="244840885" />
         <entry key="$PROJECT_DIR$/proto-manage/build.gradle" value="2532041939" />
-        <entry key="$PROJECT_DIR$/proto-public/build.gradle" value="628317477" />
+        <entry key="$PROJECT_DIR$/proto-public/build.gradle" value="1614302540" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1989021103" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1667,6 +1802,93 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/grpc-manage-javalite" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/grpc-public-java">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-gradle-plugin/0.8.3/e7955c263220f337805f25c6bc0abb115f12b765/protobuf-gradle-plugin-0.8.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-gradle-plugin/0.8.3/b8f52debd004c2dab2071bea65c85f66a8063f01/protobuf-gradle-plugin-0.8.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.allegro.tech.build/axion-release-plugin/1.8.1/47fcf4d771b557320ecb2b926fd0a04f225a03ac/axion-release-plugin-1.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.allegro.tech.build/axion-release-plugin/1.8.1/955438c6c0821c1da0257eb5e7cdc2900e27c1af/axion-release-plugin-1.8.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca/guava-18.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gradle/osdetector-gradle-plugin/1.4.0/801d1bce8a4e13a28b47a0e1bf47801ce3da0d86/osdetector-gradle-plugin-1.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gradle/osdetector-gradle-plugin/1.4.0/a6bfa3b8bc6b15b8df90893876782dab3096b68f/osdetector-gradle-plugin-1.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ajoberstar/grgit/1.7.2/6f4d9dce8528a4964fe941edf17718a5274739ec/grgit-1.7.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ajoberstar/grgit/1.7.2/8ffc92f27a1a232d8f849c4b60d5a0a65d2c69a4/grgit-1.7.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/4.5.2.201704071617-r/ad713d18ed0fa71279b002e2c1340a35dfbefee7/org.eclipse.jgit-4.5.2.201704071617-r-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit/4.5.2.201704071617-r/1352ebdefb10aab661b97413f651bd6ca3766ce/org.eclipse.jgit-4.5.2.201704071617-r.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit.ui/4.5.2.201704071617-r/210fc5b7256929c002515c399191ea7bd3736027/org.eclipse.jgit.ui-4.5.2.201704071617-r-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jgit/org.eclipse.jgit.ui/4.5.2.201704071617-r/2182c40a3cbaa0d13aa1270ce893dc2548d78f05/org.eclipse.jgit.ui-4.5.2.201704071617-r.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.54/91d6069df9be9e076bdb124e82fc2a9af9547616/jsch-0.1.54-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.54/da3584329a263616e277e15462b387addd1b208d/jsch-0.1.54.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zafarkhaja/java-semver/0.9.0/38d5bf2aa1204792794489a0e2c4c19548bc35c1/java-semver-0.9.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zafarkhaja/java-semver/0.9.0/59a83ca73c72a5e25b3f0b1bb305230a11000329/java-semver-0.9.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/kr.motd.maven/os-maven-plugin/1.4.0.Final/63f34a1b0cc37a9962b7c2c1e95a405be2be0b76/os-maven-plugin-1.4.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/kr.motd.maven/os-maven-plugin/1.4.0.Final/fb2ecdce79f677ee32680bf825c26de480fe46b/os-maven-plugin-1.4.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.jsch/0.0.9/580aea5836a0b077c285f85c4d5f80cb7070619c/jsch.agentproxy.jsch-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.jsch/0.0.9/26f5c718216f1668f674816e580aa7c92f2660ad/jsch.agentproxy.jsch-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.pageant/0.0.9/a3865d329183d51cbd6e21023d19d3eebd5df70e/jsch.agentproxy.pageant-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.pageant/0.0.9/7651361429af009ff18a6ea5c4e5d38ecff7f959/jsch.agentproxy.pageant-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.sshagent/0.0.9/19cb8705d905d218655aff43305cc8361f232fd7/jsch.agentproxy.sshagent-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.sshagent/0.0.9/2ecca436463287682d16c3fa628bd7cca426cf6f/jsch.agentproxy.sshagent-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.usocket-jna/0.0.9/2135bde834fb5fba3125c2f3aa14bcf472739c74/jsch.agentproxy.usocket-jna-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.usocket-jna/0.0.9/100522438a57b4c0d15db112fc8a08d17f48080a/jsch.agentproxy.usocket-jna-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.usocket-nc/0.0.9/bbfa3094c024cc1cffff1cef50be630d20ded605/jsch.agentproxy.usocket-nc-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.usocket-nc/0.0.9/926fd2eb5586c779b8d7827036ea8e06fe7744ba/jsch.agentproxy.usocket-nc-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/f285ac123f201fb4b028bac556928d7cf527ef48/slf4j-api-1.7.21-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-plugin-api/3.2.1/b217d5ad21e7c1712414851cca0f8db7def79fc1/maven-plugin-api-3.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-plugin-api/3.2.1/305cea4e9a89b12c08008fea079fcea2dda34eca/maven-plugin-api-3.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.17/79cfd0962de410235e9315d38d6488123e9bb299/plexus-utils-3.0.17-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.17/7b86f7a4ceffc8eadbb1a84207134af776f7cb95/plexus-utils-3.0.17.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.javaewah/JavaEWAH/0.7.9/a50d78eb630e05439461f3130b94b3bcd1ea6f03/JavaEWAH-0.7.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.javaewah/JavaEWAH/0.7.9/eceaf316a8faf0e794296ebe158ae110c7d72a5a/JavaEWAH-0.7.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/af4d76be0c46ee26b0d9d1d4a34d244a633cac84/httpclient-4.3.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.core/0.0.9/dc8402ed7f647c7d44057189a49b5743b02a7262/jsch.agentproxy.core-0.0.9-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch.agentproxy.core/0.0.9/1af3741c3a83a71e29b8aa7637979791e50e538b/jsch.agentproxy.core-0.0.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/28a5d592b494fe54c120c64689087e779a7bf55b/jna-4.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/4.1.0/67d178949fe41ff82de6dbda7ef62d48f70e031c/jna-platform-4.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/4.1.0/23457ad1cf75c2c16763330de5565a0e67b4bc0a/jna-platform-4.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.2.1/352f39f23f3df5fcfcfb594c502f82f29492ccf4/maven-model-3.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.2.1/328a3c5cfaf9b2832e6e1d21c76fcefe01e01fde/maven-model-3.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.2.1/afdc61a3e4f14c6f7db676b9d3495303f0c1812/maven-artifact-3.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.2.1/227e0c0d3b9b25dd9fce0a74b88ec212026a0fe2/maven-artifact-3.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.plexus/0.0.0.M5/d1d1ace07541404385f51343df7fc9bc4994b3a4/org.eclipse.sisu.plexus-0.0.0.M5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.plexus/0.0.0.M5/8818cc5a4d2afde2fbc87c2a78cf1ebf5719a869/org.eclipse.sisu.plexus-0.0.0.M5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.0/3a3b9c3e5a1ec04c0c8b82e249cee7aeb4a96f9a/cdi-api-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.0/44c453f60909dfc223552ace63e05c694215156b/cdi-api-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu/sisu-guice/3.1.0/a0a9d66dc7ee2010303d2d30dce8e46cbaa126aa/sisu-guice-3.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu/sisu-guice/3.1.0/97c87d15d749c86b2be1b9809b28321a1d926c7f/sisu-guice-3.1.0-no_aop.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.0.0.M5/60319b927cda9b3ce34ed95a9fa759cb86dd14d3/org.eclipse.sisu.inject-0.0.0.M5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.0.0.M5/4f6bda3f528c60a12e70db2e7a3feee539dcc8cd/org.eclipse.sisu.inject-0.0.0.M5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/b10462efcf1ac1915797958d479c724d1bd5008d/plexus-component-annotations-1.5.5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/c72f2660d0cbed24246ddb55d7fdc4f7374d2078/plexus-component-annotations-1.5.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.4/5d2b0a5bd852103294760829538702241d186520/plexus-classworlds-2.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.4/ef38ff5c25f83a4a02fcd9843d85f3e47012873e/plexus-classworlds-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/9b1fba77edd118e13c42bda43d3c993dadd52c25/jsr250-api-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/grpc-public-java" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2094,6 +2316,7 @@
         <option value="$PROJECT_DIR$/proto-public/src/main/proto/image/public/singin.proto" />
         <option value="$PROJECT_DIR$/proto-public/src/main/proto/singin/singin.proto" />
         <option value="$PROJECT_DIR$/proto-public/build.gradle" />
+        <option value="$PROJECT_DIR$/grpc-public-java/build.gradle" />
       </list>
     </option>
   </component>
@@ -2104,7 +2327,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
+    <option name="x" value="216" />
     <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
@@ -2132,6 +2355,123 @@
             <path>
               <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
               <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grpc-public-javalite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="grpclite" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-public" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-public" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hiask-api-sexyimage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hiask-api-sexyimage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="proto-public" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2331,7 +2671,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507815207034</updated>
-      <workItem from="1507815208764" duration="8054000" />
+      <workItem from="1507815208764" duration="9962000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1507816241834</created>
@@ -2375,14 +2715,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507863893662</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first commit">
+      <created>1507866608235</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507866608235</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8054000" />
+    <option name="totallyTimeSpent" value="9962000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="24" width="1280" height="773" extended-state="0" />
+    <frame x="216" y="24" width="1280" height="773" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2394,7 +2741,7 @@
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3879056" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.71091443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47050148" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36135694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2566,16 +2913,8 @@
         <state relative-caret-position="195">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
-            <element signature="e#580#613#0" expanded="true" />
+            <element signature="e#580#613#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc-manage-java/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2641,6 +2980,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/signin/grpc/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto-public/build/generated/source/proto/main/java/org/ditto/signin/grpc/LoginResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-manage-java/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc-public-java/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>

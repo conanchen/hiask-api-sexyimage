@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/grpc-manage-java" />
             <option value="$PROJECT_DIR$/grpc-manage-javalite" />
+            <option value="$PROJECT_DIR$/grpc-public-java" />
             <option value="$PROJECT_DIR$/grpc-public-javalite" />
             <option value="$PROJECT_DIR$/proto-manage" />
             <option value="$PROJECT_DIR$/proto-public" />

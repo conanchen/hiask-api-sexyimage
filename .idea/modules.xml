@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite.iml" group="grpc-manage-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite_main.iml" group="grpc-manage-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-manage-javalite/grpc-manage-javalite_test.iml" group="grpc-manage-javalite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-java.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-java.iml" group="grpc-public-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-java/grpc-public-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-java/grpc-public-java_main.iml" group="grpc-public-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-java/grpc-public-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-java/grpc-public-java_test.iml" group="grpc-public-java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite.iml" group="grpc-public-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_main.iml" group="grpc-public-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_test.iml" group="grpc-public-javalite" />
