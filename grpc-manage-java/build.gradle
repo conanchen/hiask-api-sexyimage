@@ -48,6 +48,5 @@ idea {
 }
 
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-project.logger.lifecycle("~~~1. Run Task generateProto To Compile Protobuf~~~~~~~~~~~");
-project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+project.logger.lifecycle("~~~~~~~~~~~~~~~~GRPC-MANAGE-JAVA BUILD DONE!~~~~~~~~~~~~~~~~~");
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
