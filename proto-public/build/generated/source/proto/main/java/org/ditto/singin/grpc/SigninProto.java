@@ -6,17 +6,23 @@ package org.ditto.singin.grpc;
 public final class SigninProto {
   private SigninProto() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_SignInRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_SignInRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_SignInResponse_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_SignInResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -52,13 +58,13 @@ public final class SigninProto {
     internal_static_image_public_SignInRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_image_public_SignInRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_SignInRequest_descriptor,
         new java.lang.String[] { "GitkitToken", });
     internal_static_image_public_SignInResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_image_public_SignInResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_SignInResponse_descriptor,
         new java.lang.String[] { "Error", "UserToken", });
     org.ditto.sexyimage.common.grpc.CommonProto.getDescriptor();

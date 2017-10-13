@@ -6,17 +6,23 @@ package io.grpc.examples.greeter;
 public final class GreeterProto {
   private GreeterProto() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_HelloRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_HelloRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_HelloReply_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_HelloReply_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -49,13 +55,13 @@ public final class GreeterProto {
     internal_static_image_public_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_image_public_HelloRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_HelloRequest_descriptor,
         new java.lang.String[] { "Name", });
     internal_static_image_public_HelloReply_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_image_public_HelloReply_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_HelloReply_descriptor,
         new java.lang.String[] { "Message", });
   }

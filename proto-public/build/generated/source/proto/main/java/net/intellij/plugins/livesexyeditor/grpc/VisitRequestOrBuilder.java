@@ -8,11 +8,11 @@ public interface VisitRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   java.lang.String getUrl();
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   com.google.protobuf.ByteString
       getUrlBytes();

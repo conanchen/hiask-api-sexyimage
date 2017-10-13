@@ -11,11 +11,12 @@ package org.ditto.singin.grpc;
  * Protobuf type {@code image.public.SignInRequest}
  */
 public  final class SignInRequest extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.public.SignInRequest)
     SignInRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use SignInRequest.newBuilder() to construct.
-  private SignInRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private SignInRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private SignInRequest() {
@@ -25,7 +26,7 @@ public  final class SignInRequest extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private SignInRequest(
       com.google.protobuf.CodedInputStream input,
@@ -33,6 +34,8 @@ public  final class SignInRequest extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -42,7 +45,8 @@ public  final class SignInRequest extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -61,6 +65,7 @@ public  final class SignInRequest extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -69,7 +74,7 @@ public  final class SignInRequest extends
     return org.ditto.singin.grpc.SigninProto.internal_static_image_public_SignInRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return org.ditto.singin.grpc.SigninProto.internal_static_image_public_SignInRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -79,7 +84,7 @@ public  final class SignInRequest extends
   public static final int GITKIT_TOKEN_FIELD_NUMBER = 1;
   private volatile java.lang.Object gitkitToken_;
   /**
-   * <code>optional string gitkit_token = 1;</code>
+   * <code>string gitkit_token = 1;</code>
    */
   public java.lang.String getGitkitToken() {
     java.lang.Object ref = gitkitToken_;
@@ -94,7 +99,7 @@ public  final class SignInRequest extends
     }
   }
   /**
-   * <code>optional string gitkit_token = 1;</code>
+   * <code>string gitkit_token = 1;</code>
    */
   public com.google.protobuf.ByteString
       getGitkitTokenBytes() {
@@ -123,8 +128,9 @@ public  final class SignInRequest extends
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!getGitkitTokenBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 1, gitkitToken_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, gitkitToken_);
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -133,13 +139,55 @@ public  final class SignInRequest extends
 
     size = 0;
     if (!getGitkitTokenBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, gitkitToken_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, gitkitToken_);
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof org.ditto.singin.grpc.SignInRequest)) {
+      return super.equals(obj);
+    }
+    org.ditto.singin.grpc.SignInRequest other = (org.ditto.singin.grpc.SignInRequest) obj;
+
+    boolean result = true;
+    result = result && getGitkitToken()
+        .equals(other.getGitkitToken());
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + GITKIT_TOKEN_FIELD_NUMBER;
+    hash = (53 * hash) + getGitkitToken().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static org.ditto.singin.grpc.SignInRequest parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.singin.grpc.SignInRequest parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.singin.grpc.SignInRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -163,39 +211,39 @@ public  final class SignInRequest extends
   }
   public static org.ditto.singin.grpc.SignInRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.singin.grpc.SignInRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.singin.grpc.SignInRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static org.ditto.singin.grpc.SignInRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.singin.grpc.SignInRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.singin.grpc.SignInRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -213,7 +261,7 @@ public  final class SignInRequest extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -225,7 +273,7 @@ public  final class SignInRequest extends
    * Protobuf type {@code image.public.SignInRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.public.SignInRequest)
       org.ditto.singin.grpc.SignInRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -233,7 +281,7 @@ public  final class SignInRequest extends
       return org.ditto.singin.grpc.SigninProto.internal_static_image_public_SignInRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return org.ditto.singin.grpc.SigninProto.internal_static_image_public_SignInRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -246,12 +294,13 @@ public  final class SignInRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -285,6 +334,32 @@ public  final class SignInRequest extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof org.ditto.singin.grpc.SignInRequest) {
         return mergeFrom((org.ditto.singin.grpc.SignInRequest)other);
@@ -300,6 +375,7 @@ public  final class SignInRequest extends
         gitkitToken_ = other.gitkitToken_;
         onChanged();
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -328,7 +404,7 @@ public  final class SignInRequest extends
 
     private java.lang.Object gitkitToken_ = "";
     /**
-     * <code>optional string gitkit_token = 1;</code>
+     * <code>string gitkit_token = 1;</code>
      */
     public java.lang.String getGitkitToken() {
       java.lang.Object ref = gitkitToken_;
@@ -343,7 +419,7 @@ public  final class SignInRequest extends
       }
     }
     /**
-     * <code>optional string gitkit_token = 1;</code>
+     * <code>string gitkit_token = 1;</code>
      */
     public com.google.protobuf.ByteString
         getGitkitTokenBytes() {
@@ -359,7 +435,7 @@ public  final class SignInRequest extends
       }
     }
     /**
-     * <code>optional string gitkit_token = 1;</code>
+     * <code>string gitkit_token = 1;</code>
      */
     public Builder setGitkitToken(
         java.lang.String value) {
@@ -372,7 +448,7 @@ public  final class SignInRequest extends
       return this;
     }
     /**
-     * <code>optional string gitkit_token = 1;</code>
+     * <code>string gitkit_token = 1;</code>
      */
     public Builder clearGitkitToken() {
       
@@ -381,7 +457,7 @@ public  final class SignInRequest extends
       return this;
     }
     /**
-     * <code>optional string gitkit_token = 1;</code>
+     * <code>string gitkit_token = 1;</code>
      */
     public Builder setGitkitTokenBytes(
         com.google.protobuf.ByteString value) {
@@ -396,12 +472,12 @@ public  final class SignInRequest extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

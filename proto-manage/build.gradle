@@ -8,6 +8,13 @@ dependencies {
     protobuf project(':proto-public')
 }
 
+protobuf {
+    // Configure the protoc executable
+    protoc {
+        artifact = "com.google.protobuf:protoc:$PROTOC_VERSION"
+    }
+}
+
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~PROTO-MANAGE BUILD DONE!~~~~~~~~~~~~~~~~~~~");
 project.logger.lifecycle("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

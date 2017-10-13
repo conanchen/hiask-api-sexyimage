@@ -7,11 +7,12 @@ package net.intellij.plugins.livesexyeditor.grpc;
  * Protobuf type {@code image.public.SubscribeRequest}
  */
 public  final class SubscribeRequest extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.public.SubscribeRequest)
     SubscribeRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use SubscribeRequest.newBuilder() to construct.
-  private SubscribeRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private SubscribeRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private SubscribeRequest() {
@@ -21,7 +22,7 @@ public  final class SubscribeRequest extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private SubscribeRequest(
       com.google.protobuf.CodedInputStream input,
@@ -29,6 +30,8 @@ public  final class SubscribeRequest extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -38,7 +41,8 @@ public  final class SubscribeRequest extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -77,6 +81,7 @@ public  final class SubscribeRequest extends
       if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         types_ = java.util.Collections.unmodifiableList(types_);
       }
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -85,7 +90,7 @@ public  final class SubscribeRequest extends
     return net.intellij.plugins.livesexyeditor.grpc.ImageProto.internal_static_image_public_SubscribeRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return net.intellij.plugins.livesexyeditor.grpc.ImageProto.internal_static_image_public_SubscribeRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -99,7 +104,7 @@ public  final class SubscribeRequest extends
           new com.google.protobuf.Internal.ListAdapter.Converter<
               java.lang.Integer, org.ditto.sexyimage.common.grpc.ImageType>() {
             public org.ditto.sexyimage.common.grpc.ImageType convert(java.lang.Integer from) {
-              org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.forNumber(from);
+              org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(from);
               return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
             }
           };
@@ -151,12 +156,13 @@ public  final class SubscribeRequest extends
                       throws java.io.IOException {
     getSerializedSize();
     if (getTypesList().size() > 0) {
-      output.writeRawVarint32(10);
-      output.writeRawVarint32(typesMemoizedSerializedSize);
+      output.writeUInt32NoTag(10);
+      output.writeUInt32NoTag(typesMemoizedSerializedSize);
     }
     for (int i = 0; i < types_.size(); i++) {
       output.writeEnumNoTag(types_.get(i));
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -173,14 +179,57 @@ public  final class SubscribeRequest extends
       size += dataSize;
       if (!getTypesList().isEmpty()) {  size += 1;
         size += com.google.protobuf.CodedOutputStream
-          .computeRawVarint32Size(dataSize);
+          .computeUInt32SizeNoTag(dataSize);
       }typesMemoizedSerializedSize = dataSize;
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest)) {
+      return super.equals(obj);
+    }
+    net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest other = (net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest) obj;
+
+    boolean result = true;
+    result = result && types_.equals(other.types_);
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (getTypesCount() > 0) {
+      hash = (37 * hash) + TYPES_FIELD_NUMBER;
+      hash = (53 * hash) + types_.hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -204,39 +253,39 @@ public  final class SubscribeRequest extends
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -254,7 +303,7 @@ public  final class SubscribeRequest extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -262,7 +311,7 @@ public  final class SubscribeRequest extends
    * Protobuf type {@code image.public.SubscribeRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.public.SubscribeRequest)
       net.intellij.plugins.livesexyeditor.grpc.SubscribeRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -270,7 +319,7 @@ public  final class SubscribeRequest extends
       return net.intellij.plugins.livesexyeditor.grpc.ImageProto.internal_static_image_public_SubscribeRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return net.intellij.plugins.livesexyeditor.grpc.ImageProto.internal_static_image_public_SubscribeRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -283,12 +332,13 @@ public  final class SubscribeRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -327,6 +377,32 @@ public  final class SubscribeRequest extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest) {
         return mergeFrom((net.intellij.plugins.livesexyeditor.grpc.SubscribeRequest)other);
@@ -348,6 +424,7 @@ public  final class SubscribeRequest extends
         }
         onChanged();
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -494,12 +571,12 @@ public  final class SubscribeRequest extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

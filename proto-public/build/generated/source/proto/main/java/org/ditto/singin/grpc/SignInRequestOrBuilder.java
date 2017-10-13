@@ -8,11 +8,11 @@ public interface SignInRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string gitkit_token = 1;</code>
+   * <code>string gitkit_token = 1;</code>
    */
   java.lang.String getGitkitToken();
   /**
-   * <code>optional string gitkit_token = 1;</code>
+   * <code>string gitkit_token = 1;</code>
    */
   com.google.protobuf.ByteString
       getGitkitTokenBytes();
