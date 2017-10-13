@@ -8,21 +8,21 @@ public interface ErrorOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string code = 1;</code>
+   * <code>string code = 1;</code>
    */
   java.lang.String getCode();
   /**
-   * <code>optional string code = 1;</code>
+   * <code>string code = 1;</code>
    */
   com.google.protobuf.ByteString
       getCodeBytes();
 
   /**
-   * <code>optional string details = 2;</code>
+   * <code>string details = 2;</code>
    */
   java.lang.String getDetails();
   /**
-   * <code>optional string details = 2;</code>
+   * <code>string details = 2;</code>
    */
   com.google.protobuf.ByteString
       getDetailsBytes();

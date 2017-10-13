@@ -6,22 +6,28 @@ package org.ditto.sexyimage.manage.grpc;
 public final class ImangeManProto {
   private ImangeManProto() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_manage_ListRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_manage_ListRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_manage_DeleteRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_manage_DeleteRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_manage_UpsertRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_manage_UpsertRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -65,19 +71,19 @@ public final class ImangeManProto {
     internal_static_image_manage_ListRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_image_manage_ListRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_manage_ListRequest_descriptor,
         new java.lang.String[] { "Type", "LastUpdated", });
     internal_static_image_manage_DeleteRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_image_manage_DeleteRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_manage_DeleteRequest_descriptor,
         new java.lang.String[] { "Url", });
     internal_static_image_manage_UpsertRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_image_manage_UpsertRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_manage_UpsertRequest_descriptor,
         new java.lang.String[] { "Url", "InfoUrl", "Title", "Desc", "Type", "Active", "Toprank", });
     org.ditto.sexyimage.common.grpc.CommonProto.getDescriptor();

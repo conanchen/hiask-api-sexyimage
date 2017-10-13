@@ -11,11 +11,12 @@ package org.ditto.sexyimage.common.grpc;
  * Protobuf type {@code image.common.StatusResponse}
  */
 public  final class StatusResponse extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.common.StatusResponse)
     StatusResponseOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use StatusResponse.newBuilder() to construct.
-  private StatusResponse(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private StatusResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private StatusResponse() {
@@ -24,7 +25,7 @@ public  final class StatusResponse extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private StatusResponse(
       com.google.protobuf.CodedInputStream input,
@@ -32,6 +33,8 @@ public  final class StatusResponse extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -41,7 +44,8 @@ public  final class StatusResponse extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -67,6 +71,7 @@ public  final class StatusResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -75,7 +80,7 @@ public  final class StatusResponse extends
     return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_StatusResponse_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_StatusResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -85,19 +90,19 @@ public  final class StatusResponse extends
   public static final int ERROR_FIELD_NUMBER = 1;
   private org.ditto.sexyimage.common.grpc.Error error_;
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   public boolean hasError() {
     return error_ != null;
   }
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   public org.ditto.sexyimage.common.grpc.Error getError() {
     return error_ == null ? org.ditto.sexyimage.common.grpc.Error.getDefaultInstance() : error_;
   }
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   public org.ditto.sexyimage.common.grpc.ErrorOrBuilder getErrorOrBuilder() {
     return getError();
@@ -118,6 +123,7 @@ public  final class StatusResponse extends
     if (error_ != null) {
       output.writeMessage(1, getError());
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -129,11 +135,58 @@ public  final class StatusResponse extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getError());
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof org.ditto.sexyimage.common.grpc.StatusResponse)) {
+      return super.equals(obj);
+    }
+    org.ditto.sexyimage.common.grpc.StatusResponse other = (org.ditto.sexyimage.common.grpc.StatusResponse) obj;
+
+    boolean result = true;
+    result = result && (hasError() == other.hasError());
+    if (hasError()) {
+      result = result && getError()
+          .equals(other.getError());
+    }
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (hasError()) {
+      hash = (37 * hash) + ERROR_FIELD_NUMBER;
+      hash = (53 * hash) + getError().hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -157,39 +210,39 @@ public  final class StatusResponse extends
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.StatusResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -207,7 +260,7 @@ public  final class StatusResponse extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -219,7 +272,7 @@ public  final class StatusResponse extends
    * Protobuf type {@code image.common.StatusResponse}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.common.StatusResponse)
       org.ditto.sexyimage.common.grpc.StatusResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -227,7 +280,7 @@ public  final class StatusResponse extends
       return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_StatusResponse_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_StatusResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -240,12 +293,13 @@ public  final class StatusResponse extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -287,6 +341,32 @@ public  final class StatusResponse extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof org.ditto.sexyimage.common.grpc.StatusResponse) {
         return mergeFrom((org.ditto.sexyimage.common.grpc.StatusResponse)other);
@@ -301,6 +381,7 @@ public  final class StatusResponse extends
       if (other.hasError()) {
         mergeError(other.getError());
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -328,16 +409,16 @@ public  final class StatusResponse extends
     }
 
     private org.ditto.sexyimage.common.grpc.Error error_ = null;
-    private com.google.protobuf.SingleFieldBuilder<
+    private com.google.protobuf.SingleFieldBuilderV3<
         org.ditto.sexyimage.common.grpc.Error, org.ditto.sexyimage.common.grpc.Error.Builder, org.ditto.sexyimage.common.grpc.ErrorOrBuilder> errorBuilder_;
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public boolean hasError() {
       return errorBuilder_ != null || error_ != null;
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public org.ditto.sexyimage.common.grpc.Error getError() {
       if (errorBuilder_ == null) {
@@ -347,7 +428,7 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public Builder setError(org.ditto.sexyimage.common.grpc.Error value) {
       if (errorBuilder_ == null) {
@@ -363,7 +444,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public Builder setError(
         org.ditto.sexyimage.common.grpc.Error.Builder builderForValue) {
@@ -377,7 +458,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public Builder mergeError(org.ditto.sexyimage.common.grpc.Error value) {
       if (errorBuilder_ == null) {
@@ -395,7 +476,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public Builder clearError() {
       if (errorBuilder_ == null) {
@@ -409,7 +490,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public org.ditto.sexyimage.common.grpc.Error.Builder getErrorBuilder() {
       
@@ -417,7 +498,7 @@ public  final class StatusResponse extends
       return getErrorFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
     public org.ditto.sexyimage.common.grpc.ErrorOrBuilder getErrorOrBuilder() {
       if (errorBuilder_ != null) {
@@ -428,13 +509,13 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .image.common.Error error = 1;</code>
+     * <code>.image.common.Error error = 1;</code>
      */
-    private com.google.protobuf.SingleFieldBuilder<
+    private com.google.protobuf.SingleFieldBuilderV3<
         org.ditto.sexyimage.common.grpc.Error, org.ditto.sexyimage.common.grpc.Error.Builder, org.ditto.sexyimage.common.grpc.ErrorOrBuilder> 
         getErrorFieldBuilder() {
       if (errorBuilder_ == null) {
-        errorBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+        errorBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             org.ditto.sexyimage.common.grpc.Error, org.ditto.sexyimage.common.grpc.Error.Builder, org.ditto.sexyimage.common.grpc.ErrorOrBuilder>(
                 getError(),
                 getParentForChildren(),
@@ -445,12 +526,12 @@ public  final class StatusResponse extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

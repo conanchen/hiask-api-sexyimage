@@ -102,8 +102,7 @@ public enum ImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return org.ditto.sexyimage.common.grpc.CommonProto.getDescriptor()
-        .getEnumTypes().get(0);
+    return org.ditto.sexyimage.common.grpc.CommonProto.getDescriptor().getEnumTypes().get(0);
   }
 
   private static final ImageType[] VALUES = values();

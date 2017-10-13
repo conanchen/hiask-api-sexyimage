@@ -7,11 +7,12 @@ package org.ditto.sexyimage.manage.grpc;
  * Protobuf type {@code image.manage.UpsertRequest}
  */
 public  final class UpsertRequest extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.manage.UpsertRequest)
     UpsertRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use UpsertRequest.newBuilder() to construct.
-  private UpsertRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private UpsertRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private UpsertRequest() {
@@ -27,7 +28,7 @@ public  final class UpsertRequest extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private UpsertRequest(
       com.google.protobuf.CodedInputStream input,
@@ -35,6 +36,8 @@ public  final class UpsertRequest extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -44,7 +47,8 @@ public  final class UpsertRequest extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -97,6 +101,7 @@ public  final class UpsertRequest extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -105,7 +110,7 @@ public  final class UpsertRequest extends
     return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_UpsertRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_UpsertRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -115,7 +120,7 @@ public  final class UpsertRequest extends
   public static final int URL_FIELD_NUMBER = 1;
   private volatile java.lang.Object url_;
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -130,7 +135,7 @@ public  final class UpsertRequest extends
     }
   }
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   public com.google.protobuf.ByteString
       getUrlBytes() {
@@ -149,7 +154,7 @@ public  final class UpsertRequest extends
   public static final int INFOURL_FIELD_NUMBER = 2;
   private volatile java.lang.Object infoUrl_;
   /**
-   * <code>optional string infoUrl = 2;</code>
+   * <code>string infoUrl = 2;</code>
    */
   public java.lang.String getInfoUrl() {
     java.lang.Object ref = infoUrl_;
@@ -164,7 +169,7 @@ public  final class UpsertRequest extends
     }
   }
   /**
-   * <code>optional string infoUrl = 2;</code>
+   * <code>string infoUrl = 2;</code>
    */
   public com.google.protobuf.ByteString
       getInfoUrlBytes() {
@@ -183,7 +188,7 @@ public  final class UpsertRequest extends
   public static final int TITLE_FIELD_NUMBER = 3;
   private volatile java.lang.Object title_;
   /**
-   * <code>optional string title = 3;</code>
+   * <code>string title = 3;</code>
    */
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
@@ -198,7 +203,7 @@ public  final class UpsertRequest extends
     }
   }
   /**
-   * <code>optional string title = 3;</code>
+   * <code>string title = 3;</code>
    */
   public com.google.protobuf.ByteString
       getTitleBytes() {
@@ -217,7 +222,7 @@ public  final class UpsertRequest extends
   public static final int DESC_FIELD_NUMBER = 4;
   private volatile java.lang.Object desc_;
   /**
-   * <code>optional string desc = 4;</code>
+   * <code>string desc = 4;</code>
    */
   public java.lang.String getDesc() {
     java.lang.Object ref = desc_;
@@ -232,7 +237,7 @@ public  final class UpsertRequest extends
     }
   }
   /**
-   * <code>optional string desc = 4;</code>
+   * <code>string desc = 4;</code>
    */
   public com.google.protobuf.ByteString
       getDescBytes() {
@@ -251,23 +256,23 @@ public  final class UpsertRequest extends
   public static final int TYPE_FIELD_NUMBER = 5;
   private int type_;
   /**
-   * <code>optional .image.common.ImageType type = 5;</code>
+   * <code>.image.common.ImageType type = 5;</code>
    */
   public int getTypeValue() {
     return type_;
   }
   /**
-   * <code>optional .image.common.ImageType type = 5;</code>
+   * <code>.image.common.ImageType type = 5;</code>
    */
   public org.ditto.sexyimage.common.grpc.ImageType getType() {
-    org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.forNumber(type_);
+    org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
     return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
   }
 
   public static final int ACTIVE_FIELD_NUMBER = 6;
   private boolean active_;
   /**
-   * <code>optional bool active = 6;</code>
+   * <code>bool active = 6;</code>
    */
   public boolean getActive() {
     return active_;
@@ -276,7 +281,7 @@ public  final class UpsertRequest extends
   public static final int TOPRANK_FIELD_NUMBER = 7;
   private boolean toprank_;
   /**
-   * <code>optional bool toprank = 7;</code>
+   * <code>bool toprank = 7;</code>
    */
   public boolean getToprank() {
     return toprank_;
@@ -295,16 +300,16 @@ public  final class UpsertRequest extends
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!getUrlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 1, url_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, url_);
     }
     if (!getInfoUrlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 2, infoUrl_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, infoUrl_);
     }
     if (!getTitleBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 3, title_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, title_);
     }
     if (!getDescBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 4, desc_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, desc_);
     }
     if (type_ != org.ditto.sexyimage.common.grpc.ImageType.NORMAL.getNumber()) {
       output.writeEnum(5, type_);
@@ -315,6 +320,7 @@ public  final class UpsertRequest extends
     if (toprank_ != false) {
       output.writeBool(7, toprank_);
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -323,16 +329,16 @@ public  final class UpsertRequest extends
 
     size = 0;
     if (!getUrlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, url_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, url_);
     }
     if (!getInfoUrlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(2, infoUrl_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, infoUrl_);
     }
     if (!getTitleBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(3, title_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, title_);
     }
     if (!getDescBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(4, desc_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, desc_);
     }
     if (type_ != org.ditto.sexyimage.common.grpc.ImageType.NORMAL.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
@@ -346,11 +352,78 @@ public  final class UpsertRequest extends
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(7, toprank_);
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof org.ditto.sexyimage.manage.grpc.UpsertRequest)) {
+      return super.equals(obj);
+    }
+    org.ditto.sexyimage.manage.grpc.UpsertRequest other = (org.ditto.sexyimage.manage.grpc.UpsertRequest) obj;
+
+    boolean result = true;
+    result = result && getUrl()
+        .equals(other.getUrl());
+    result = result && getInfoUrl()
+        .equals(other.getInfoUrl());
+    result = result && getTitle()
+        .equals(other.getTitle());
+    result = result && getDesc()
+        .equals(other.getDesc());
+    result = result && type_ == other.type_;
+    result = result && (getActive()
+        == other.getActive());
+    result = result && (getToprank()
+        == other.getToprank());
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + URL_FIELD_NUMBER;
+    hash = (53 * hash) + getUrl().hashCode();
+    hash = (37 * hash) + INFOURL_FIELD_NUMBER;
+    hash = (53 * hash) + getInfoUrl().hashCode();
+    hash = (37 * hash) + TITLE_FIELD_NUMBER;
+    hash = (53 * hash) + getTitle().hashCode();
+    hash = (37 * hash) + DESC_FIELD_NUMBER;
+    hash = (53 * hash) + getDesc().hashCode();
+    hash = (37 * hash) + TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + type_;
+    hash = (37 * hash) + ACTIVE_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getActive());
+    hash = (37 * hash) + TOPRANK_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getToprank());
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -374,39 +447,39 @@ public  final class UpsertRequest extends
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.UpsertRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -424,7 +497,7 @@ public  final class UpsertRequest extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -432,7 +505,7 @@ public  final class UpsertRequest extends
    * Protobuf type {@code image.manage.UpsertRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.manage.UpsertRequest)
       org.ditto.sexyimage.manage.grpc.UpsertRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -440,7 +513,7 @@ public  final class UpsertRequest extends
       return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_UpsertRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_UpsertRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -453,12 +526,13 @@ public  final class UpsertRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -510,6 +584,32 @@ public  final class UpsertRequest extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof org.ditto.sexyimage.manage.grpc.UpsertRequest) {
         return mergeFrom((org.ditto.sexyimage.manage.grpc.UpsertRequest)other);
@@ -546,6 +646,7 @@ public  final class UpsertRequest extends
       if (other.getToprank() != false) {
         setToprank(other.getToprank());
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -574,7 +675,7 @@ public  final class UpsertRequest extends
 
     private java.lang.Object url_ = "";
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -589,7 +690,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -605,7 +706,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -618,7 +719,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder clearUrl() {
       
@@ -627,7 +728,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -643,7 +744,7 @@ public  final class UpsertRequest extends
 
     private java.lang.Object infoUrl_ = "";
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public java.lang.String getInfoUrl() {
       java.lang.Object ref = infoUrl_;
@@ -658,7 +759,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public com.google.protobuf.ByteString
         getInfoUrlBytes() {
@@ -674,7 +775,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder setInfoUrl(
         java.lang.String value) {
@@ -687,7 +788,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder clearInfoUrl() {
       
@@ -696,7 +797,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder setInfoUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -712,7 +813,7 @@ public  final class UpsertRequest extends
 
     private java.lang.Object title_ = "";
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public java.lang.String getTitle() {
       java.lang.Object ref = title_;
@@ -727,7 +828,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTitleBytes() {
@@ -743,7 +844,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder setTitle(
         java.lang.String value) {
@@ -756,7 +857,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder clearTitle() {
       
@@ -765,7 +866,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder setTitleBytes(
         com.google.protobuf.ByteString value) {
@@ -781,7 +882,7 @@ public  final class UpsertRequest extends
 
     private java.lang.Object desc_ = "";
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public java.lang.String getDesc() {
       java.lang.Object ref = desc_;
@@ -796,7 +897,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public com.google.protobuf.ByteString
         getDescBytes() {
@@ -812,7 +913,7 @@ public  final class UpsertRequest extends
       }
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder setDesc(
         java.lang.String value) {
@@ -825,7 +926,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder clearDesc() {
       
@@ -834,7 +935,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder setDescBytes(
         com.google.protobuf.ByteString value) {
@@ -850,13 +951,13 @@ public  final class UpsertRequest extends
 
     private int type_ = 0;
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -864,14 +965,14 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public org.ditto.sexyimage.common.grpc.ImageType getType() {
-      org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.forNumber(type_);
+      org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
       return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder setType(org.ditto.sexyimage.common.grpc.ImageType value) {
       if (value == null) {
@@ -883,7 +984,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder clearType() {
       
@@ -894,13 +995,13 @@ public  final class UpsertRequest extends
 
     private boolean active_ ;
     /**
-     * <code>optional bool active = 6;</code>
+     * <code>bool active = 6;</code>
      */
     public boolean getActive() {
       return active_;
     }
     /**
-     * <code>optional bool active = 6;</code>
+     * <code>bool active = 6;</code>
      */
     public Builder setActive(boolean value) {
       
@@ -909,7 +1010,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional bool active = 6;</code>
+     * <code>bool active = 6;</code>
      */
     public Builder clearActive() {
       
@@ -920,13 +1021,13 @@ public  final class UpsertRequest extends
 
     private boolean toprank_ ;
     /**
-     * <code>optional bool toprank = 7;</code>
+     * <code>bool toprank = 7;</code>
      */
     public boolean getToprank() {
       return toprank_;
     }
     /**
-     * <code>optional bool toprank = 7;</code>
+     * <code>bool toprank = 7;</code>
      */
     public Builder setToprank(boolean value) {
       
@@ -935,7 +1036,7 @@ public  final class UpsertRequest extends
       return this;
     }
     /**
-     * <code>optional bool toprank = 7;</code>
+     * <code>bool toprank = 7;</code>
      */
     public Builder clearToprank() {
       
@@ -945,12 +1046,12 @@ public  final class UpsertRequest extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

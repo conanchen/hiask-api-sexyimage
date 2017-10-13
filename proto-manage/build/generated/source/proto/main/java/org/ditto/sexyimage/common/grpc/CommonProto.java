@@ -6,22 +6,28 @@ package org.ditto.sexyimage.common.grpc;
 public final class CommonProto {
   private CommonProto() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_common_Error_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_common_Error_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_common_StatusResponse_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_common_StatusResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_common_ImageResponse_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_common_ImageResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -59,19 +65,19 @@ public final class CommonProto {
     internal_static_image_common_Error_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_image_common_Error_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_common_Error_descriptor,
         new java.lang.String[] { "Code", "Details", });
     internal_static_image_common_StatusResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_image_common_StatusResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_common_StatusResponse_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_image_common_ImageResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_image_common_ImageResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_common_ImageResponse_descriptor,
         new java.lang.String[] { "Url", "InfoUrl", "Title", "Desc", "Type", "LastUpdated", "Active", });
   }

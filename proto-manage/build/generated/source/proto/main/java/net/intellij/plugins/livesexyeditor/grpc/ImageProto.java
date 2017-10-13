@@ -6,22 +6,28 @@ package net.intellij.plugins.livesexyeditor.grpc;
 public final class ImageProto {
   private ImageProto() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_SubscribeRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_SubscribeRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_VisitRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_VisitRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_image_public_VisitResponse_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_image_public_VisitResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -60,19 +66,19 @@ public final class ImageProto {
     internal_static_image_public_SubscribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_image_public_SubscribeRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_SubscribeRequest_descriptor,
         new java.lang.String[] { "Types", });
     internal_static_image_public_VisitRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_image_public_VisitRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_VisitRequest_descriptor,
         new java.lang.String[] { "Url", });
     internal_static_image_public_VisitResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_image_public_VisitResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_image_public_VisitResponse_descriptor,
         new java.lang.String[] { "Error", });
     org.ditto.sexyimage.common.grpc.CommonProto.getDescriptor();

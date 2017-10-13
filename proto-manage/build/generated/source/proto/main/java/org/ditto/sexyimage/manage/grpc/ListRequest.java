@@ -7,11 +7,12 @@ package org.ditto.sexyimage.manage.grpc;
  * Protobuf type {@code image.manage.ListRequest}
  */
 public  final class ListRequest extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.manage.ListRequest)
     ListRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use ListRequest.newBuilder() to construct.
-  private ListRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private ListRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private ListRequest() {
@@ -22,7 +23,7 @@ public  final class ListRequest extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private ListRequest(
       com.google.protobuf.CodedInputStream input,
@@ -30,6 +31,8 @@ public  final class ListRequest extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -39,7 +42,8 @@ public  final class ListRequest extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -63,6 +67,7 @@ public  final class ListRequest extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -71,7 +76,7 @@ public  final class ListRequest extends
     return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_ListRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_ListRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -81,23 +86,23 @@ public  final class ListRequest extends
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_;
   /**
-   * <code>optional .image.common.ImageType type = 1;</code>
+   * <code>.image.common.ImageType type = 1;</code>
    */
   public int getTypeValue() {
     return type_;
   }
   /**
-   * <code>optional .image.common.ImageType type = 1;</code>
+   * <code>.image.common.ImageType type = 1;</code>
    */
   public org.ditto.sexyimage.common.grpc.ImageType getType() {
-    org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.forNumber(type_);
+    org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
     return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
   }
 
   public static final int LASTUPDATED_FIELD_NUMBER = 2;
   private long lastUpdated_;
   /**
-   * <code>optional int64 lastUpdated = 2;</code>
+   * <code>int64 lastUpdated = 2;</code>
    */
   public long getLastUpdated() {
     return lastUpdated_;
@@ -121,6 +126,7 @@ public  final class ListRequest extends
     if (lastUpdated_ != 0L) {
       output.writeInt64(2, lastUpdated_);
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -136,11 +142,57 @@ public  final class ListRequest extends
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(2, lastUpdated_);
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof org.ditto.sexyimage.manage.grpc.ListRequest)) {
+      return super.equals(obj);
+    }
+    org.ditto.sexyimage.manage.grpc.ListRequest other = (org.ditto.sexyimage.manage.grpc.ListRequest) obj;
+
+    boolean result = true;
+    result = result && type_ == other.type_;
+    result = result && (getLastUpdated()
+        == other.getLastUpdated());
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + type_;
+    hash = (37 * hash) + LASTUPDATED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getLastUpdated());
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -164,39 +216,39 @@ public  final class ListRequest extends
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.manage.grpc.ListRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -214,7 +266,7 @@ public  final class ListRequest extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -222,7 +274,7 @@ public  final class ListRequest extends
    * Protobuf type {@code image.manage.ListRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.manage.ListRequest)
       org.ditto.sexyimage.manage.grpc.ListRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -230,7 +282,7 @@ public  final class ListRequest extends
       return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_ListRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return org.ditto.sexyimage.manage.grpc.ImangeManProto.internal_static_image_manage_ListRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -243,12 +295,13 @@ public  final class ListRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -285,6 +338,32 @@ public  final class ListRequest extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof org.ditto.sexyimage.manage.grpc.ListRequest) {
         return mergeFrom((org.ditto.sexyimage.manage.grpc.ListRequest)other);
@@ -302,6 +381,7 @@ public  final class ListRequest extends
       if (other.getLastUpdated() != 0L) {
         setLastUpdated(other.getLastUpdated());
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -330,13 +410,13 @@ public  final class ListRequest extends
 
     private int type_ = 0;
     /**
-     * <code>optional .image.common.ImageType type = 1;</code>
+     * <code>.image.common.ImageType type = 1;</code>
      */
     public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>optional .image.common.ImageType type = 1;</code>
+     * <code>.image.common.ImageType type = 1;</code>
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -344,14 +424,14 @@ public  final class ListRequest extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 1;</code>
+     * <code>.image.common.ImageType type = 1;</code>
      */
     public org.ditto.sexyimage.common.grpc.ImageType getType() {
-      org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.forNumber(type_);
+      org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
       return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
     }
     /**
-     * <code>optional .image.common.ImageType type = 1;</code>
+     * <code>.image.common.ImageType type = 1;</code>
      */
     public Builder setType(org.ditto.sexyimage.common.grpc.ImageType value) {
       if (value == null) {
@@ -363,7 +443,7 @@ public  final class ListRequest extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 1;</code>
+     * <code>.image.common.ImageType type = 1;</code>
      */
     public Builder clearType() {
       
@@ -374,13 +454,13 @@ public  final class ListRequest extends
 
     private long lastUpdated_ ;
     /**
-     * <code>optional int64 lastUpdated = 2;</code>
+     * <code>int64 lastUpdated = 2;</code>
      */
     public long getLastUpdated() {
       return lastUpdated_;
     }
     /**
-     * <code>optional int64 lastUpdated = 2;</code>
+     * <code>int64 lastUpdated = 2;</code>
      */
     public Builder setLastUpdated(long value) {
       
@@ -389,7 +469,7 @@ public  final class ListRequest extends
       return this;
     }
     /**
-     * <code>optional int64 lastUpdated = 2;</code>
+     * <code>int64 lastUpdated = 2;</code>
      */
     public Builder clearLastUpdated() {
       
@@ -399,12 +479,12 @@ public  final class ListRequest extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

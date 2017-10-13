@@ -7,11 +7,12 @@ package org.ditto.sexyimage.common.grpc;
  * Protobuf type {@code image.common.Error}
  */
 public  final class Error extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.common.Error)
     ErrorOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use Error.newBuilder() to construct.
-  private Error(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private Error(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private Error() {
@@ -22,7 +23,7 @@ public  final class Error extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private Error(
       com.google.protobuf.CodedInputStream input,
@@ -30,6 +31,8 @@ public  final class Error extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -39,7 +42,8 @@ public  final class Error extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -64,6 +68,7 @@ public  final class Error extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -72,7 +77,7 @@ public  final class Error extends
     return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_Error_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_Error_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -82,7 +87,7 @@ public  final class Error extends
   public static final int CODE_FIELD_NUMBER = 1;
   private volatile java.lang.Object code_;
   /**
-   * <code>optional string code = 1;</code>
+   * <code>string code = 1;</code>
    */
   public java.lang.String getCode() {
     java.lang.Object ref = code_;
@@ -97,7 +102,7 @@ public  final class Error extends
     }
   }
   /**
-   * <code>optional string code = 1;</code>
+   * <code>string code = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCodeBytes() {
@@ -116,7 +121,7 @@ public  final class Error extends
   public static final int DETAILS_FIELD_NUMBER = 2;
   private volatile java.lang.Object details_;
   /**
-   * <code>optional string details = 2;</code>
+   * <code>string details = 2;</code>
    */
   public java.lang.String getDetails() {
     java.lang.Object ref = details_;
@@ -131,7 +136,7 @@ public  final class Error extends
     }
   }
   /**
-   * <code>optional string details = 2;</code>
+   * <code>string details = 2;</code>
    */
   public com.google.protobuf.ByteString
       getDetailsBytes() {
@@ -160,11 +165,12 @@ public  final class Error extends
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!getCodeBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 1, code_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, code_);
     }
     if (!getDetailsBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 2, details_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, details_);
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -173,16 +179,62 @@ public  final class Error extends
 
     size = 0;
     if (!getCodeBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, code_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, code_);
     }
     if (!getDetailsBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(2, details_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, details_);
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof org.ditto.sexyimage.common.grpc.Error)) {
+      return super.equals(obj);
+    }
+    org.ditto.sexyimage.common.grpc.Error other = (org.ditto.sexyimage.common.grpc.Error) obj;
+
+    boolean result = true;
+    result = result && getCode()
+        .equals(other.getCode());
+    result = result && getDetails()
+        .equals(other.getDetails());
+    result = result && unknownFields.equals(other.unknownFields);
+    return result;
+  }
+
+  @java.lang.Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + CODE_FIELD_NUMBER;
+    hash = (53 * hash) + getCode().hashCode();
+    hash = (37 * hash) + DETAILS_FIELD_NUMBER;
+    hash = (53 * hash) + getDetails().hashCode();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static org.ditto.sexyimage.common.grpc.Error parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.sexyimage.common.grpc.Error parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.sexyimage.common.grpc.Error parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -206,39 +258,39 @@ public  final class Error extends
   }
   public static org.ditto.sexyimage.common.grpc.Error parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.Error parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.common.grpc.Error parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.Error parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static org.ditto.sexyimage.common.grpc.Error parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static org.ditto.sexyimage.common.grpc.Error parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -256,7 +308,7 @@ public  final class Error extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -264,7 +316,7 @@ public  final class Error extends
    * Protobuf type {@code image.common.Error}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:image.common.Error)
       org.ditto.sexyimage.common.grpc.ErrorOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -272,7 +324,7 @@ public  final class Error extends
       return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_Error_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return org.ditto.sexyimage.common.grpc.CommonProto.internal_static_image_common_Error_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -285,12 +337,13 @@ public  final class Error extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
@@ -327,6 +380,32 @@ public  final class Error extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof org.ditto.sexyimage.common.grpc.Error) {
         return mergeFrom((org.ditto.sexyimage.common.grpc.Error)other);
@@ -346,6 +425,7 @@ public  final class Error extends
         details_ = other.details_;
         onChanged();
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -374,7 +454,7 @@ public  final class Error extends
 
     private java.lang.Object code_ = "";
     /**
-     * <code>optional string code = 1;</code>
+     * <code>string code = 1;</code>
      */
     public java.lang.String getCode() {
       java.lang.Object ref = code_;
@@ -389,7 +469,7 @@ public  final class Error extends
       }
     }
     /**
-     * <code>optional string code = 1;</code>
+     * <code>string code = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCodeBytes() {
@@ -405,7 +485,7 @@ public  final class Error extends
       }
     }
     /**
-     * <code>optional string code = 1;</code>
+     * <code>string code = 1;</code>
      */
     public Builder setCode(
         java.lang.String value) {
@@ -418,7 +498,7 @@ public  final class Error extends
       return this;
     }
     /**
-     * <code>optional string code = 1;</code>
+     * <code>string code = 1;</code>
      */
     public Builder clearCode() {
       
@@ -427,7 +507,7 @@ public  final class Error extends
       return this;
     }
     /**
-     * <code>optional string code = 1;</code>
+     * <code>string code = 1;</code>
      */
     public Builder setCodeBytes(
         com.google.protobuf.ByteString value) {
@@ -443,7 +523,7 @@ public  final class Error extends
 
     private java.lang.Object details_ = "";
     /**
-     * <code>optional string details = 2;</code>
+     * <code>string details = 2;</code>
      */
     public java.lang.String getDetails() {
       java.lang.Object ref = details_;
@@ -458,7 +538,7 @@ public  final class Error extends
       }
     }
     /**
-     * <code>optional string details = 2;</code>
+     * <code>string details = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDetailsBytes() {
@@ -474,7 +554,7 @@ public  final class Error extends
       }
     }
     /**
-     * <code>optional string details = 2;</code>
+     * <code>string details = 2;</code>
      */
     public Builder setDetails(
         java.lang.String value) {
@@ -487,7 +567,7 @@ public  final class Error extends
       return this;
     }
     /**
-     * <code>optional string details = 2;</code>
+     * <code>string details = 2;</code>
      */
     public Builder clearDetails() {
       
@@ -496,7 +576,7 @@ public  final class Error extends
       return this;
     }
     /**
-     * <code>optional string details = 2;</code>
+     * <code>string details = 2;</code>
      */
     public Builder setDetailsBytes(
         com.google.protobuf.ByteString value) {
@@ -511,12 +591,12 @@ public  final class Error extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 
