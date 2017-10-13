@@ -19,7 +19,7 @@ protobuf {
     }
     plugins {
         javalite {
-            artifact = "com.google.protobuf:protoc-gen-javalite:$PROTOC_VERSION"
+            artifact = "com.google.protobuf:protoc-gen-javalite:$PROTOC_GEN_JAVALITE_VERSION"
         }
         grpclite {
             artifact = "io.grpc:protoc-gen-grpc-java:$GRPC_VERSION"

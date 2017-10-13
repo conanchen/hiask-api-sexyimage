@@ -21,7 +21,7 @@
     <orderEntry type="library" name="Gradle: io.grpc:grpc-core:1.6.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java-util:3.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.api.grpc:proto-google-common-protos:0.1.9" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.4.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.instrumentation:instrumentation-api:0.4.3" level="project" />
     <orderEntry type="library" name="Gradle: io.opencensus:opencensus-api:0.5.1" level="project" />
     <orderEntry type="library" name="Gradle: io.grpc:grpc-context:1.6.1" level="project" />

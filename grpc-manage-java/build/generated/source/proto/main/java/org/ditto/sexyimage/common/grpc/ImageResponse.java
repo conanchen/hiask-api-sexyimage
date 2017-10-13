@@ -10,6 +10,7 @@ public  final class ImageResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:image.common.ImageResponse)
     ImageResponseOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use ImageResponse.newBuilder() to construct.
   private ImageResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -27,7 +28,7 @@ public  final class ImageResponse extends
   @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
-    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    return this.unknownFields;
   }
   private ImageResponse(
       com.google.protobuf.CodedInputStream input,
@@ -35,6 +36,8 @@ public  final class ImageResponse extends
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     int mutable_bitField0_ = 0;
+    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -44,7 +47,8 @@ public  final class ImageResponse extends
             done = true;
             break;
           default: {
-            if (!input.skipField(tag)) {
+            if (!parseUnknownFieldProto3(
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -97,6 +101,7 @@ public  final class ImageResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -115,7 +120,7 @@ public  final class ImageResponse extends
   public static final int URL_FIELD_NUMBER = 1;
   private volatile java.lang.Object url_;
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -130,7 +135,7 @@ public  final class ImageResponse extends
     }
   }
   /**
-   * <code>optional string url = 1;</code>
+   * <code>string url = 1;</code>
    */
   public com.google.protobuf.ByteString
       getUrlBytes() {
@@ -149,7 +154,7 @@ public  final class ImageResponse extends
   public static final int INFOURL_FIELD_NUMBER = 2;
   private volatile java.lang.Object infoUrl_;
   /**
-   * <code>optional string infoUrl = 2;</code>
+   * <code>string infoUrl = 2;</code>
    */
   public java.lang.String getInfoUrl() {
     java.lang.Object ref = infoUrl_;
@@ -164,7 +169,7 @@ public  final class ImageResponse extends
     }
   }
   /**
-   * <code>optional string infoUrl = 2;</code>
+   * <code>string infoUrl = 2;</code>
    */
   public com.google.protobuf.ByteString
       getInfoUrlBytes() {
@@ -183,7 +188,7 @@ public  final class ImageResponse extends
   public static final int TITLE_FIELD_NUMBER = 3;
   private volatile java.lang.Object title_;
   /**
-   * <code>optional string title = 3;</code>
+   * <code>string title = 3;</code>
    */
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
@@ -198,7 +203,7 @@ public  final class ImageResponse extends
     }
   }
   /**
-   * <code>optional string title = 3;</code>
+   * <code>string title = 3;</code>
    */
   public com.google.protobuf.ByteString
       getTitleBytes() {
@@ -217,7 +222,7 @@ public  final class ImageResponse extends
   public static final int DESC_FIELD_NUMBER = 4;
   private volatile java.lang.Object desc_;
   /**
-   * <code>optional string desc = 4;</code>
+   * <code>string desc = 4;</code>
    */
   public java.lang.String getDesc() {
     java.lang.Object ref = desc_;
@@ -232,7 +237,7 @@ public  final class ImageResponse extends
     }
   }
   /**
-   * <code>optional string desc = 4;</code>
+   * <code>string desc = 4;</code>
    */
   public com.google.protobuf.ByteString
       getDescBytes() {
@@ -251,13 +256,13 @@ public  final class ImageResponse extends
   public static final int TYPE_FIELD_NUMBER = 5;
   private int type_;
   /**
-   * <code>optional .image.common.ImageType type = 5;</code>
+   * <code>.image.common.ImageType type = 5;</code>
    */
   public int getTypeValue() {
     return type_;
   }
   /**
-   * <code>optional .image.common.ImageType type = 5;</code>
+   * <code>.image.common.ImageType type = 5;</code>
    */
   public org.ditto.sexyimage.common.grpc.ImageType getType() {
     org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
@@ -267,7 +272,7 @@ public  final class ImageResponse extends
   public static final int LASTUPDATED_FIELD_NUMBER = 6;
   private long lastUpdated_;
   /**
-   * <code>optional int64 lastUpdated = 6;</code>
+   * <code>int64 lastUpdated = 6;</code>
    */
   public long getLastUpdated() {
     return lastUpdated_;
@@ -276,7 +281,7 @@ public  final class ImageResponse extends
   public static final int ACTIVE_FIELD_NUMBER = 7;
   private boolean active_;
   /**
-   * <code>optional bool active = 7;</code>
+   * <code>bool active = 7;</code>
    */
   public boolean getActive() {
     return active_;
@@ -315,6 +320,7 @@ public  final class ImageResponse extends
     if (active_ != false) {
       output.writeBool(7, active_);
     }
+    unknownFields.writeTo(output);
   }
 
   public int getSerializedSize() {
@@ -346,11 +352,11 @@ public  final class ImageResponse extends
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(7, active_);
     }
+    size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  private static final long serialVersionUID = 0L;
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
@@ -375,6 +381,7 @@ public  final class ImageResponse extends
         == other.getLastUpdated());
     result = result && (getActive()
         == other.getActive());
+    result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
 
@@ -384,7 +391,7 @@ public  final class ImageResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + URL_FIELD_NUMBER;
     hash = (53 * hash) + getUrl().hashCode();
     hash = (37 * hash) + INFOURL_FIELD_NUMBER;
@@ -406,6 +413,17 @@ public  final class ImageResponse extends
     return hash;
   }
 
+  public static org.ditto.sexyimage.common.grpc.ImageResponse parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static org.ditto.sexyimage.common.grpc.ImageResponse parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static org.ditto.sexyimage.common.grpc.ImageResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -571,7 +589,7 @@ public  final class ImageResponse extends
     }
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return (Builder) super.setField(field, value);
     }
     public Builder clearField(
@@ -584,12 +602,12 @@ public  final class ImageResponse extends
     }
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return (Builder) super.setRepeatedField(field, index, value);
     }
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -628,6 +646,7 @@ public  final class ImageResponse extends
       if (other.getActive() != false) {
         setActive(other.getActive());
       }
+      this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
     }
@@ -656,7 +675,7 @@ public  final class ImageResponse extends
 
     private java.lang.Object url_ = "";
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -671,7 +690,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
@@ -687,7 +706,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder setUrl(
         java.lang.String value) {
@@ -700,7 +719,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder clearUrl() {
       
@@ -709,7 +728,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string url = 1;</code>
+     * <code>string url = 1;</code>
      */
     public Builder setUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -725,7 +744,7 @@ public  final class ImageResponse extends
 
     private java.lang.Object infoUrl_ = "";
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public java.lang.String getInfoUrl() {
       java.lang.Object ref = infoUrl_;
@@ -740,7 +759,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public com.google.protobuf.ByteString
         getInfoUrlBytes() {
@@ -756,7 +775,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder setInfoUrl(
         java.lang.String value) {
@@ -769,7 +788,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder clearInfoUrl() {
       
@@ -778,7 +797,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string infoUrl = 2;</code>
+     * <code>string infoUrl = 2;</code>
      */
     public Builder setInfoUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -794,7 +813,7 @@ public  final class ImageResponse extends
 
     private java.lang.Object title_ = "";
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public java.lang.String getTitle() {
       java.lang.Object ref = title_;
@@ -809,7 +828,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTitleBytes() {
@@ -825,7 +844,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder setTitle(
         java.lang.String value) {
@@ -838,7 +857,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder clearTitle() {
       
@@ -847,7 +866,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string title = 3;</code>
+     * <code>string title = 3;</code>
      */
     public Builder setTitleBytes(
         com.google.protobuf.ByteString value) {
@@ -863,7 +882,7 @@ public  final class ImageResponse extends
 
     private java.lang.Object desc_ = "";
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public java.lang.String getDesc() {
       java.lang.Object ref = desc_;
@@ -878,7 +897,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public com.google.protobuf.ByteString
         getDescBytes() {
@@ -894,7 +913,7 @@ public  final class ImageResponse extends
       }
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder setDesc(
         java.lang.String value) {
@@ -907,7 +926,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder clearDesc() {
       
@@ -916,7 +935,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional string desc = 4;</code>
+     * <code>string desc = 4;</code>
      */
     public Builder setDescBytes(
         com.google.protobuf.ByteString value) {
@@ -932,13 +951,13 @@ public  final class ImageResponse extends
 
     private int type_ = 0;
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -946,14 +965,14 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public org.ditto.sexyimage.common.grpc.ImageType getType() {
       org.ditto.sexyimage.common.grpc.ImageType result = org.ditto.sexyimage.common.grpc.ImageType.valueOf(type_);
       return result == null ? org.ditto.sexyimage.common.grpc.ImageType.UNRECOGNIZED : result;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder setType(org.ditto.sexyimage.common.grpc.ImageType value) {
       if (value == null) {
@@ -965,7 +984,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional .image.common.ImageType type = 5;</code>
+     * <code>.image.common.ImageType type = 5;</code>
      */
     public Builder clearType() {
       
@@ -976,13 +995,13 @@ public  final class ImageResponse extends
 
     private long lastUpdated_ ;
     /**
-     * <code>optional int64 lastUpdated = 6;</code>
+     * <code>int64 lastUpdated = 6;</code>
      */
     public long getLastUpdated() {
       return lastUpdated_;
     }
     /**
-     * <code>optional int64 lastUpdated = 6;</code>
+     * <code>int64 lastUpdated = 6;</code>
      */
     public Builder setLastUpdated(long value) {
       
@@ -991,7 +1010,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional int64 lastUpdated = 6;</code>
+     * <code>int64 lastUpdated = 6;</code>
      */
     public Builder clearLastUpdated() {
       
@@ -1002,13 +1021,13 @@ public  final class ImageResponse extends
 
     private boolean active_ ;
     /**
-     * <code>optional bool active = 7;</code>
+     * <code>bool active = 7;</code>
      */
     public boolean getActive() {
       return active_;
     }
     /**
-     * <code>optional bool active = 7;</code>
+     * <code>bool active = 7;</code>
      */
     public Builder setActive(boolean value) {
       
@@ -1017,7 +1036,7 @@ public  final class ImageResponse extends
       return this;
     }
     /**
-     * <code>optional bool active = 7;</code>
+     * <code>bool active = 7;</code>
      */
     public Builder clearActive() {
       
@@ -1027,12 +1046,12 @@ public  final class ImageResponse extends
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.setUnknownFieldsProto3(unknownFields);
     }
 
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return this;
+      return super.mergeUnknownFields(unknownFields);
     }
 
 

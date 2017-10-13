@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_main.iml" group="grpc-public-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-public-javalite/grpc-public-javalite_test.iml" group="grpc-public-javalite" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hiask-api-sexyimage.iml" filepath="$PROJECT_DIR$/.idea/hiask-api-sexyimage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto-manage/hiask-api-sexyimage-proto-manage_main.iml" filepath="$PROJECT_DIR$/.idea/modules/proto-manage/hiask-api-sexyimage-proto-manage_main.iml" group="proto-manage" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto-manage/hiask-api-sexyimage-proto-manage_test.iml" filepath="$PROJECT_DIR$/.idea/modules/proto-manage/hiask-api-sexyimage-proto-manage_test.iml" group="proto-manage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage.iml" filepath="$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage.iml" group="proto-manage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage_main.iml" filepath="$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage_main.iml" group="proto-manage" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage_test.iml" filepath="$PROJECT_DIR$/.idea/modules/proto-manage/proto-manage_test.iml" group="proto-manage" />

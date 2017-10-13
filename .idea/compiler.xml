@@ -8,6 +8,8 @@
       <module name="grpc-manage-javalite_test" target="1.8" />
       <module name="grpc-public-javalite_main" target="1.8" />
       <module name="grpc-public-javalite_test" target="1.8" />
+      <module name="hiask-api-sexyimage-proto-manage_main" target="1.8" />
+      <module name="hiask-api-sexyimage-proto-manage_test" target="1.8" />
       <module name="proto-manage_main" target="1.8" />
       <module name="proto-manage_test" target="1.8" />
       <module name="proto-public_main" target="1.8" />

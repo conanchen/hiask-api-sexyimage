@@ -8,16 +8,16 @@ public interface ListRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .image.common.ImageType type = 1;</code>
+   * <code>.image.common.ImageType type = 1;</code>
    */
   int getTypeValue();
   /**
-   * <code>optional .image.common.ImageType type = 1;</code>
+   * <code>.image.common.ImageType type = 1;</code>
    */
   org.ditto.sexyimage.common.grpc.ImageType getType();
 
   /**
-   * <code>optional int64 lastUpdated = 2;</code>
+   * <code>int64 lastUpdated = 2;</code>
    */
   long getLastUpdated();
 }

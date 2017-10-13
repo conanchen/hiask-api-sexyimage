@@ -8,24 +8,24 @@ public interface SignInResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   boolean hasError();
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   org.ditto.sexyimage.common.grpc.Error getError();
   /**
-   * <code>optional .image.common.Error error = 1;</code>
+   * <code>.image.common.Error error = 1;</code>
    */
   org.ditto.sexyimage.common.grpc.ErrorOrBuilder getErrorOrBuilder();
 
   /**
-   * <code>optional string user_token = 2;</code>
+   * <code>string user_token = 2;</code>
    */
   java.lang.String getUserToken();
   /**
-   * <code>optional string user_token = 2;</code>
+   * <code>string user_token = 2;</code>
    */
   com.google.protobuf.ByteString
       getUserTokenBytes();
